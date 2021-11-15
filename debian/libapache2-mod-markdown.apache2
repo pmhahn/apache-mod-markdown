@@ -1,0 +1,3 @@
+mod .libs/mod_markdown.so
+mod debian/markdown.load
+mod debian/markdown.conf

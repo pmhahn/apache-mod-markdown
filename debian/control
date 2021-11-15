@@ -1,0 +1,25 @@
+Source: apache-mod-markdown
+Section: httpd
+Priority: optional
+Maintainer: Philipp Matthias Hahn <pmhahn@debian.org>
+Standards-Version: 4.5.1
+Build-Depends:
+ apache2-dev,
+ autoconf,
+ automake,
+ debhelper-compat (= 12),
+ dh-apache2,
+ libmarkdown2-dev,
+Homepage: https://github.com/hamano/apache-mod-markdown
+
+Package: libapache2-mod-markdown
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Markdown module for Apache2 (mod_markdown)
+ Markdown filter module for Apache HTTPD Server based on the C implementation
+ DISCOUNT from John Gruber. It implements all of the language described in the
+ Markdown syntax document and passes the Markdown 1.0 test suite.
+ .
+ This module only works on Apache 2 servers.
